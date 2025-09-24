@@ -1,0 +1,25 @@
+{
+  "feature": "addons",
+  "validations": [
+    {
+      "description": "Header title",
+      "jsonPath": "$.productsAndServices.titles.headers.addOnTitle",
+      "expected": "notNull"
+    },
+    {
+      "description": "Buy addon button",
+      "jsonPath": "$.productsAndServices.buttons.buyAddon",
+      "expected": "notNull"
+    },
+    {
+      "description": "Feature flag show Addons",
+      "jsonPath": "$.flags.showAddons",
+      "expected": "true"
+    },
+    {
+      "description": "Feature eligible recharge",
+      "jsonPath": "$.flags.enableRecharge",
+      "expected": "true"
+    }
+  ]
+}
